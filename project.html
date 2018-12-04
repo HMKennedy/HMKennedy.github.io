@@ -2,272 +2,346 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Heather Kennedy">
     <meta name="keywords" content="Heather, Kennedy, Portfolio, UI, UX">
     <meta name="description" content="This portfolio was designed and coded by Heather Kennedy.">
     <title>Portfolio | Heather Kennedy</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">
-              <img src="images/Logo.svg" alt="HK logo">
-            </a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="mailto:heather.m.kennedy513@gmail.com">Contact</a>
-          </li>
-        </ul>
-        <div class="nav-line"></div>
-      </nav>
-    </header>
-    <!--hero-->
-    <section>
-      <div class="hero-image">
-        <img src="images/marble background.png" alt="marble background">
-          <img src="images/Laptop Bevy Homepage.png" alt="Bevy homepage">
+   <div class="container">
+     <header>
+       <a class="logo" href="index.html">
+         <img src="images/Logo.svg" alt="HK logo">
+       </a>
+       <nav class="nav">
+        <ul class="navigation">
+         <li>
+           <a href="index.html">Portfolio</a>
+         </li>
+         <li>
+           <a href="about.html">About</a>
+         </li>
+         <li>
+           <a href="mailto:heather.m.kennedy513@gmail.com">Contact</a>
+         </li>
+         </ul>
+       </nav>
+     </header>
+     <!--hero-->
+     <section class="bevy-hero">
+       <div class="hero-image">
+         <img src="images/Laptop Bevy Homepage.png" alt="Bevy homepage">
+       </div>
+       <div class="intro">
+         <h1>Bevy</h1>
+         <p>Bevy is a cloud storage application allowing users to save, organize, and share documents, images, links, and notes all from one convenient and easy to use location. </p>
+         <a href="https://invis.io/68OBPXEGMPA" target="_blank" class="button">View Prototype</a>
+       </div>
+       <div class="h-line"></div>
+       <div class="role">
+         <h2>Role</h2>
+         <h4>UX Research, UX Design, UI Design, Branding</h4>
+       </div>
+       <div class="deliverables">
+         <h2>Deliverables</h2>
+         <h4>Style Guide, Logo, Desktop & Mobile High-Fidelity Mockups, Desktop & Mobile Prototypes, Static Assets</h4>
+       </div>
+       <div class="tools">
+         <h2>Tools</h2>
+         <h4>Figma, InVision, draw.io, Usability Hub</h4>
+       </div>
+     </section>
+    <!--problem & solution-->
+     <section class="prob-sol">
+       <div class="problem">
+         <h2>Problem</h2>
+         <p>Users are increasingly turning to cloud storage as a means of storing and organizing content. However, they often store content in multiple locacation making it difficult to access. Users need an application that allows them to store and organize their documents, notes, and images in one easy to use application which they can access from any device.</p>
+       </div>
+       <div class="solution">
+         <h2>Solution</h2>
+         <p>Bevy-a cloud storage application that combines the functionality of Google Drive with the aesthetic appeal of Pinterest. User research guided every aspect of Bevy’s creation from the features included in the app, down to the button design. Bevy allows users to save, share, organize, and create content while employing a design that feels fresh and personal. This is a cloud storage platform users will enjoy using.</p>
+       </div>
+     </section>
+     <!--competitive analysis-->
+     <section class="comp-ana">
+       <div class="black-bar">
+         <h2>Competitive Analysis</h2>
+       </div>
+       <div class="ca-text">
+         <p>To better understand the cloud storage market, I conducted a competitive analysis of Google Drive, Pinterest, and Shutterfly.</p>
+         <h4>Key takeaways</h4>
+         <ul>
+           <li>The ability to share content with others is crucial to users.</li>
+           <li>Users need to be able to organize content so it is easy to locate in future.</li>
+           <li>Ease of use is of paramount importance. There are a number of cloud storage options, and if users have a trouble navigating one application they will simply switch to another.</li>
+         </ul>
+       </div>
+       <div class="competition">
+        <img class="google-icon" src="images/Google Drive.png" alt="Google Drive icon">
+        <h4 class="google">Google Drive</h4>
+        <img class="pinterest-icon" src="images/Pinterest.png" alt="Pinterest icon">
+        <h4 class="pinterest">Pinterest</h4>
+        <img class="shutterfly-icon" src="images/Shutterfly.png" alt="Shutterfly icon">
+        <h4 class="shutterfly">Shutterfly</h4>
+       </div>
+     </section>
+     <!--user research-->
+     <section class="user-research">
+       <div class="black-bar">
+         <h2>User Research</h2>
+       </div>
+       <p class="ur-text">A user survey was distributed to determine who uses cloud storage platforms and what users want out of cloud storage.</p>
+       <div class="stats">
+         <div class="stat-a">
+           <img src="images/78.svg" alt="circle 78.9% filled">
+           <p>Participants who use cloud storage platforms.</p>
+         </div>
+         <div class="stat-b">
+           <img src="images/46.svg" alt="circle 46.7% filled">
+           <p>Cloud storage users who use collaborative tools.</p>
+         </div>
+         <div class="stat-c">
+           <img src="images/80.svg" alt="circle 80% filled">
+           <p>Cloud storage users who use Google Dive.</p>
+         </div>
+         <div class="stat-d">
+           <img src="images/80.svg" alt="circle 80% filled">
+           <p>Participants who use cloud storage for personal use.  40% used cloud storage for work and 26.7% for school. </p>
+         </div>
+       </div>
+       <div class="graph">
+         <h3>Most used cloud storage features</h3>
+         <img src="images/Graph.svg" alt="graph showing cloud storage features">
+       </div>
+     </section>
+     <!--user personas-->
+     <section class="user-personas">
+       <div class="black-bar">
+         <h2>User Personas</h2>
+       </div>
+      <img class="Megan" src="images/Megan (1).png" alt="photo of woman">
+      <img class="Adam" src="images/Adam (1).png" alt="photo of man">
+      <div class="box-m">
+         <h3>Megan | Busy Working Parent</h3>
+         <h4>Goals</h4>
+         <ul>
+           <li>Share links with coworkers</li>
+           <li>Access from anywhere</li>
+           <li>Save inspiration for later</li>
+         </ul>
+         <h4>Frustrations</h4>
+         <ul>
+           <li>Not enough free storage</li>
+           <li>Lacks features of desktop applications</li>
+         </ul>
+       </div>
+       <div class="box-a">
+         <h3>Adam | Tech-Savvy Millennial</h3>
+         <h4>Goals</h4>
+         <ul>
+           <li>Upload files from multiple devices</li>
+           <li>Easily organize files</li>
+           <li>Share files</li>
+         </ul>
+         <h4>Frustrations</h4>
+         <ul>
+           <li>Poor mobile versions</li>
+           <li>Privacy concerns</li>
+         </ul>
+       </div>
+     </section>
+     <!--user stories-->
+     <section class="user-stories">
+       <div class="box-us">
+         <div class="black-bar-mini">
+           <h2>User Stories</h2>
+         </div>
+         <div class="us-para">
+           <p>User stories were developed to determine what tasks users would perform on the platform, and tasks were assigned high, medium, or low priority. Some high priority tasks included signing up for an account, signing in to an account, adding items, and organizing items into groups.</p>
+           <a href="https://docs.google.com/spreadsheets/d/1qU7_ZgWuDCrjUzR6JyCqAyEUJs7s75R8RQR1xx6EG0k/edit?usp=sharing" target="_blank" class="button">View User Stories</a>
+         </div>
+       </div>
+     </section>
+     <!--user flows-->
+     <section class="user-flows">
+       <div class="box-uf">
+         <div class="black-bar-mini">
+           <h2>User Flows</h2>
+         </div>
+         <div class="uf-para">
+           <p>User flows were created accounting for all the high priority user stories as well as a number of medium and low priority user stories. The user flows give a visual representation of the users’ journey through the platform and make it easier to see holes as well as ensure smooth transitions from one area to the next. User flows were created for onboarding, adding items, existing item options, and account settings.</p>
+           <a href="https://drive.google.com/open?id=1Y32BEhGY6X_OWePSZ7_sFMd9ZyrJ4koh" target="_blank" class="button">View User Flows</a>
+         </div>
+       </div>
+     </section>
+     <!--wireframes-->
+     <section class="wireframes">
+       <div class="white-bar">
+         <h2>Wireframes</h2>
+       </div>
+       <p>With the user flows as a guide, I created wireframes in Figma for the onboarding, adding items, existing item option, and account settings processes. </p>
+       <img src="images/WF images.png" alt="Bevy wireframes">
+     </section>
+     <!--wireframe prototype and user testing-->
+     <section class="prototype">
+       <div class="black-bar">
+         <h2>Prototype and User Testing</h2>
+       </div>
+       <p>From the wireframes, I created a prototype with InVision. In person and remote usability tests were conducted to determine where the design needed adjusting.</p>
+       <div class="wf-examples">
+         <div class="sign-up">
+           <img class="wf-signup" src="images/wf sign up circle.png" alt="Bevy wireframe sign up screen with circle around sign up button">
+           <h4>Sign Up</h4>
+           <p>Testers were able to navigate the onboarding process easily. </p>
+         </div>
+         <div class="add-photo">
+           <img class="wf-addphoto" src="images/wf add photo circle.png" alt="Bevy wireframe new photo scrren with circle around Add to Folder button">
+           <h4>Add New Photo</h4>
+           <p>When asked to add a new photo, some testers were confused by the Move to Folder button. I decided future iterations needed additional screens in this process to improve the flow and eliminate confusion.</p>
+         </div>
+         <div class="move">
+           <img class="wf-move" src="images/wf dashboard circle.png" alt="Bevy wireframe dashboard with circle around card options">
+           <h4>Move Item to Folder</h4>
+           <p>Moving an item into a folder proved a challenge for testers. In the initial design, icons would appear when a user hovered over a card. Users did not realize this and searched the dashboard looking for a Move button. To solve for this problem, I made the icons a static feature in later iterations.</p>
+         </div>
+       </div>
+     </section>
+     <!--branding-->
+     <section class="branding">
+       <div class="black-bar">
+         <h2>Branding</h2>
+       </div>
+       <div class="logos">
+         <h2>Logo</h2>
+         <p>While working on the logo, I came up with a wide variety of sketches. My favorite sketches substituted squirrels for the B in Bevy the application name. I expanded on the squirrel logos in Figma and decided to use the squirrel as a mark in front of the name for legibility reasons. I wanted a brand typeface with a handwritten feel and chose Kaushan Script.</p>
       </div>
-      <h1>Bevy</h1>
-      <p>Bevy is a cloud storage application allowing users to save, organize, and share documents, images, links, and notes all from one convenient and easy to use location. </p>
-      <a href="https://invis.io/68OBPXEGMPA" target="_blank" class="button">View Prototype</a>
+      <div class="sketches">
+         <h4>Sketches</h4>
+         <img src="images/sketch.png" alt="sketches of logos">
+      </div>
+      <div class="it">
+         <h4>Iterations</h4>
+         <img src="images/squirrel.png" alt="squirrel logo options">
+      </div>
+      <div class="mark">
+         <h4>Final Product</h4>
+         <img src="images/Logos.png" alt="final logo">
+      </div>
       <div class="h-line"></div>
-      <div class="role">
-        <h2>Role</h2>
-        <h4>UX Research, UX Design, UI Design, Branding</h4>
+      <div class="style-guide">
+         <h2>Style Guide</h2>
+         <p>To give the brand cohesion, I created a comprehensive style guide.</p>
+         <a href="https://www.figma.com/file/G1sGTrojtGkIAwGzsXoNYj7Y/Bevy-Brand-Style-Guide?node-id=0%3A1" target="_blank" class="button">View Style Guide</a>
       </div>
-      <div class="deliverables">
-        <h2>Deliverables</h2>
-        <h4>Style Guide, Logo, Desktop & Mobile High-Fidelity Mockups, Desktop & Mobile Prototypes, Static Assets</h4>
+      <div class="color">
+         <h3>Color Palette</h3>
+         <img src="images/1color.png" alt="red, turquoise, white">
+         <img src="images/2color.png" alt="navey, dark gray, gray">
       </div>
-      <div class="tools">
-        <h2>Tools</h2>
-        <h4>Figma, InVision, draw.io, Usability Hub</h4>
-      </div>
-    </section>
-    <main>
-      <!--problem-->
-      <section class="black">
-        <h2>Problem</h2>
-        <p>Users are increasingly turning to cloud storage as a means of storing and organizing content. However, they often store content in multiple locacation making it difficult to access. Users need an application that allows them to store and organize their documents, notes, and images in one easy to use application which they can access from any device.</p>
-      </section>
-      <!--solution-->
-      <section class="black">
-        <h2>Solution</h2>
-        <p>Bevy-a cloud storage application that combines the functionality of Google Drive with the aesthetic appeal of Pinterest. User research guided every aspect of Bevy’s creation from the features included in the app, down to the button design. Bevy allows users to save, share, organize, and create content while employing a design that feels fresh and personal. This is a cloud storage platform users will enjoy using.</p>
-      </section>
-      <!--competitive analysis-->
-      <section>
-        <div class="competition">
-          <img src="images/Google Drive.png" alt="Google Drive icon">
-          <h3>Google Drive</h3>
-          <img src="images/Pinterest.png" alt="Pinterest icon">
-          <h3>Pinterest</h3>
-          <img src="images/Shutterfly.png" alt="Shutterfly icon">
-          <h3>Shutterfly</h3>
-        </div>
-        <div class="ca-text">
-          <h2>Competitive Analysis</h2>
-          <p>To better understand the cloud storage market, I conducted a competitive analysis of Google Drive, Pinterest, and Shutterfly.</p>
-          <h4>Key takeaways</h4>
-          <ul>
-            <li>The ability to share content with others is crucial to users.</li>
-            <li>Users need to be able to organize content so it is easy to locate in future.</li>
-            <li>Ease of use is of paramount importance. There are a number of cloud storage options, and if users have a trouble navigating one application they will simply switch to another.</li>
-          </ul>
-        </div>
-      </section>
-      <img src="images/rain.png" alt="rain drops on black">
-      <!--user research-->
-      <section>
-        <h2>User Research</h2>
-        <p>A user survey was distributed to determine who uses cloud storage platforms and what users want out of cloud storage.</p>
-        <div class="stats">
-          <img src="images/78.9%.svg" alt="circle 78.9% filled">
-          <p>Participants who use cloud storage platforms.</p>
-          <img src="images/46.7%.svg" alt="circle 46.7% filled">
-          <p>Cloud storage users who use collaborative tools.</p>
-          <img src="images/80%.svg" alt="circle 80% filled">
-          <p>Cloud storage users who use Google Dive.</p>
-          <img src="images/80%.svg" alt="circle 80% filled">
-          <p>Participants who use cloud storage for personal use.  40% used cloud storage for work and 26.7% for school. </p>
-        </div>
-        <div class="graph">
-          <h3>Most used cloud storage features</h3>
-          <img src="images/Graph.svg" alt="graph showing cloud storage features">
-        </div>
-      </section>
-      <!--user personas-->
-      <section>
-        <div class="black-bar"></div>
-        <h2>User Personas</h2>
-        <div class="Megan">
-          <img src="images/Megan (1).png" alt="photo of woman">
-          <h3>Megan | Busy Working Parent</h3>
-          <h4>Goals</h4>
-          <ul>
-            <li>Share links with coworkers</li>
-            <li>Access from anywhere</li>
-            <li>Save inspiration for later</li>
-          </ul>
-          <h4>Frustrations</h4>
-          <ul>
-            <li>Not enough free storage</li>
-            <li>Lacks features of desktop applications</li>
-          </ul>
-        </div>
-        <div class="Adam">
-          <img src="images/Adam (1).png" alt="photo of man">
-          <h3>Adam | Tech-Savvy Millennial</h3>
-          <h4>Goals</h4>
-          <ul>
-            <li>Upload files from multiple devices</li>
-            <li>Easily organize files</li>
-            <li>Share files</li>
-          </ul>
-          <h4>Frustrations</h4>
-          <ul>
-            <li>Poor mobile versions</li>
-            <li>Privacy concerns</li>
-          </ul>
-        </div>
-      </section>
-      <!--user stories-->
-      <section>
-        <div class="white-box">
-          <h2>User Stories</h2>
-          <p>User stories were developed to determine what tasks users would perform on the platform, and tasks were assigned high, medium, or low priority. Some high priority tasks included signing up for an account, signing in to an account, adding items, and organizing items into groups.</p>
-          <a href="https://docs.google.com/spreadsheets/d/1qU7_ZgWuDCrjUzR6JyCqAyEUJs7s75R8RQR1xx6EG0k/edit?usp=sharing" target="_blank" class="button">View User Stories</a>
-        </div>
-      </section>
-      <!--user flows-->
-      <section>
-        <div class="white-box">
-          <h2>User Flows</h2>
-          <p>User flows were created accounting for all the high priority user stories as well as a number of medium and low priority user stories. The user flows give a visual representation of the users’ journey through the platform and make it easier to see holes as well as ensure smooth transitions from one area to the next. User flows were created for onboarding, adding items, existing item options, and account settings.</p>
-          <a href="https://drive.google.com/open?id=1Y32BEhGY6X_OWePSZ7_sFMd9ZyrJ4koh" target="_blank" class="button">View User Flows</a>
-        </div>
-      </section>
-      <!--wireframes-->
-      <section class="black">
-        <h2>Wireframes</h2>
-        <p>With the user flows as a guide, I created wireframes in Figma for the onboarding, adding items, existing item option, and account settings processes. </p>
-        <img src="images/wf dashboard.png" alt="Bevy wireframe dashboard">
-        <img src="images/wf add photo.png" alt="Bevy wireframe add photo screen">
-        <img src="images/wf home.png" alt="Bevy wireframe homepage">
-      </section>
-      <!--wireframe prototype and user testing-->
-      <section>
-        <h2>Prototype and User Testing</h2>
-        <p>From the wireframes, I created a prototype with InVision. In person and remote usability tests were conducted to determine where the design needed adjusting.</p>
-        <div class="sign-up">
-          <img src="images/wf sign up circle.png" alt="Bevy wireframe sign up screen with circle around sign up button">
-          <p>Testers were able to navigate the onboarding process easily. </p>
-        </div>
-        <div class="add-photo">
-          <img src="images/wf add photo circle.png" alt="Bevy wireframe new photo scrren with circle around Add to Folder button">
-          <p>When asked to add a new photo, some testers were confused by the Move to Folder button. I decided future iterations needed additional screens in this process to improve the flow and eliminate confusion.</p>
-        </div>
-        <div class="move">
-          <img src="images/wf dashboard circle.png" alt="Bevy wireframe dashboard with circle around card options">
-          <p>Moving an item into a folder proved a challenge for testers. In the initial design, icons would appear when a user hovered over a card. Users did not realize this and searched the dashboard looking for a Move button. To solve for this problem, I made the icons a static feature in later iterations.</p>
-        </div>
-      </section>
-      <!--branding-->
-      <section>
-        <div class="black bar"></div>
-        <h2>Branding</h2>
-        <div class="logo">
-          <h2>Logo</h2>
-          <p>While working on the logo, I came up with a wide variety of sketches. My favorite sketches substituted squirrels for the B in Bevy the application name. I expanded on the squirrel logos in Figma and decided to use the squirrel as a mark in front of the name for legibility reasons. I wanted a brand typeface with a handwritten feel and chose Kaushan Script.</p>
-          <img src="images/sketch.png" alt="sketches of logos">
-          <div class="v-line"></div>
-          <img src="images/squirrel.png" alt="squirrel logo options">
-          <div class="v-line"></div>
-          <img src="images/Logos.png" alt="final logo">
-          <div class="h-line"></div>
-        </div>
-        <div class="style-guide">
-          <h2>Style Guide</h2>
-          <p>To give the brand cohesion, I created a comprehensive style guide.</h2>
-          <a href="https://www.figma.com/file/G1sGTrojtGkIAwGzsXoNYj7Y/Bevy-Brand-Style-Guide?node-id=0%3A1" target="_blank" class="button">View Style Guide</a>
-          <h3>Color Palette</h3>
-          <img src="images/1color.png" alt="red, turquoise, white">
-          <img src="images/2color.png" alt="navey, dark gray, gray">
-          <img src="images/Typography.png" alt="examples of Kaushan Script and Open Sans typefaces">
-        </div>
-      </section>
-      <img src="images/granite.png" alt="black and white granite">
-      <!--high fidelity mockups-->
-      <section>
-        <h2>High Fidelity Mockups</h2>
-        <p>Implementing the branding work and the feedback I received from the wireframe user testing, I created high fidelity mockups in Figma for mobile and desktop. I tried to solve for the issues that arose in the first round of user testing by placing icons permanently at the bottom of cards  and adding additional screens to the Add New processes.</p>
-        <img src="images/hf homepage.png" alt="Bevy homepage">
-        <img src="images/hf dashboard.png" alt="Bevy dashboard">
-        <img src="images/hf settings.png" alt="Bevy settings page">
-      </section>
-      <!--preference tests-->
-      <section class="black">
-        <h2>Preference Tests</h2>
-        <p>Preference tests were conducted to determine users’ preferences for button style, folder style and background. More than simple aesthetic preference, I believe these items had a real impact on the usability of the site.</p>
-        <img src="images/Folder Card 1.png" alt="folder card with bottom tab">
-        <img src="images/Folder Card 2.png" alt="folder card with top tab">
-      </section>
-      <!--high fidelity prototype and user testing-->
-      <section>
-        <h2>High Fidelity Prototype and User Testing</h2>
-        <p>Based on the results of the preference tests, I updated the high fidelity mockups and created a high fidelity clickable prototype in InVision.</p>
-        <div class="test-1">
-          <img src="images/hf new photo 1.png" alt="Bevy drag and drop new photo">
-          <img src="images/hf new photo 2.png" alt="Bevy photo loading">
-          <img src="images/hf new photo 3.png" alt="Bevy preview of photo">
-          <p>I added additional screens to the add new tasks which added fluidity to the flow and users had no problems with this task.</p>
-        </div>
-        <div class="test-2">
-          <img src="images/hf move 1.png" alt="Bevy dashboard">
-          <img src="images/hf move 2.png" alt="Bevy move to folder">
-          <img src="images/hf move 3.png" alt="Bevy select folder">
-          <p>I permanently displayed the available icons at the bottom of each card, no need to hover. Users recognized the move to folder icon and were able to complete this task.</p>
-        </div>
-      </section>
-      <!--iterations-->
-      <section class="black">
-        <img src="images/hf mobile 1.png" alt="mobile dashboard with one column">
-        <img src="images/hf mobile 2.png" alt="mobile dashboard with two columns">
-        <h2>Iterations</h2>
-        <p>A user who tested the mobile site suggested the dashboard have two columns of cards rather than one column. I created a two column design in Figma and did an additional preference test. Participants preferred the two column design, so I changed the mobile mockups and prototype to reflect this change.</p>
-      </section>
-      <!--closing-->
-      <section>
-        <img src="images/phone.png" alt="mobile phone with Bevy homepage">
-        <h2>What I Learned</h2>
-        <p>During the course of this project, I learned about the importance of user research and testing in guiding your design decisions. Information I gained from the initial user survey aided me through the entire project. Assumptions I made were contradicted by user research and testing, and I realized I would have made wrong turns without this vital information. Change is inevitable in the design process, and it needs to be embraced if you are going to create a successful product.</p>
-        <a href="mailto:heather.m.kennedy513@gmail.com" class="button">Contact Me</a>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li class="copyright">©2018|Heather Kennedy</li>
-        <li>
-          <a href="mailto:heather.m.kennedy513@gmail.com">
-            <img src="images/Email.svg" alt="email icon">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/hkennedydesign/">
-            <img src="images/LinkedIn.svg" alt="LinkedIn icon">
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/HMKennedy">
-            <img src="images/GitHub.svg" alt="GitHub icon">
-          </a>
-        </li>
-      </ul>
-    </footer>
+      <div class="typography">
+         <h3>Typography</h3>
+         <img src="images/Text A.png" alt="kaushan script">
+         <img src="images/Text B.png" alt="open sans semibold">
+         <img src="images/Text C.png" alt="open sans">
+       </div>
+     </section>
+     <!--high fidelity mockups-->
+     <section class="hi-fi">
+       <div class="black-bar">
+         <h2>High Fidelity Mockups</h2>
+       </div>
+       <p>Implementing the branding work and the feedback I received from the wireframe user testing, I created high fidelity mockups in Figma for mobile and desktop. I tried to solve for the issues that arose in the first round of user testing by placing icons permanently at the bottom of cards  and adding additional screens to the Add New processes.</p>
+       <img class="hf-home" src="images/hf homepage.png" alt="Bevy homepage">
+       <img class="hf-dash" src="images/hf dashboard.png" alt="Bevy dashboard">
+       <img class="hf-set" src="images/hf settings.png" alt="Bevy settings page">
+     </section>
+     <!--preference tests-->
+     <section class="preference">
+       <div class="white-bar">
+         <h2>Preference Tests</h2>
+       </div>
+       <p>Preference tests were conducted to determine users’ preferences for button style, folder style and background. More than simple aesthetic preference, I believe these items had a real impact on the usability of the site.</p>
+       <div class="opA">
+         <h4>Option A</h4>
+         <img src="images/Folder Card 1.png" alt="folder card with bottom tab">
+       </div>
+       <div class="opB">
+         <h4>Option B</h4>
+         <img src="images/Folder Card 2.png" alt="folder card with top tab">
+       </div>
+     </section>
+     <!--high fidelity prototype and user testing-->
+     <section class="hifi-testing">
+       <div class="black-bar">
+         <h2>High Fidelity Prototype and User Testing</h2>
+       </div>
+       <p class="hifi-para">Based on the results of the preference tests, I updated the high fidelity mockups and created a high fidelity clickable prototype in InVision.</p>
+       <div class="testing">
+         <img class="test1-im1" src="images/hf new photo 1.png" alt="Bevy drag and drop new photo">
+         <img class="test1-im2" src="images/hf new photo 2.png" alt="Bevy photo loading">
+         <img class="test1-im3" src="images/hf new photo 3.png" alt="Bevy preview of photo">
+         <div class="test-1">
+           <h4>Add New Photo</h4>
+           <p>I added additional screens to the add new tasks which added fluidity to the flow and users had no problems with this task.</p>
+         </div>
+         <img class="test2-im1" src="images/hf move 1.png" alt="Bevy dashboard">
+         <img class="test2-im2" src="images/hf move 2.png" alt="Bevy move to folder">
+         <img class="test2-im3" src="images/hf move 3.png" alt="Bevy select folder">
+         <div class="test-2">
+           <h4>Move Item to Folder</h4>
+           <p>I permanently displayed the available icons at the bottom of each card, no need to hover. Users recognized the move to folder icon and were able to complete this task.</p>
+         </div>
+     </div>
+     </section>
+     <!--iterations-->
+     <section class="iterations">
+       <div class="white-bar">
+         <h2>Iterations</h2>
+       </div>
+       <p>A user who tested the mobile site suggested the dashboard have two columns of cards rather than one column. I created a two column design in Figma and did an additional preference test. Participants preferred the two column design, so I changed the mobile mockups and prototype to reflect this change.</p>
+       <div class="original">
+         <h3>Original</h3>
+         <img src="images/hf mobile 1.png" alt="mobile dashboard with one column">
+       </div>
+       <div class="final">
+         <h3>Final</h3>
+         <img src="images/hf mobile 2.png" alt="mobile dashboard with two columns">
+       </div>
+     </section>
+     <!--what I learned-->
+     <section class="learned">
+       <div class="black-bar">
+         <h2>What I Learned</h2>
+       </div>
+       <div class="learned-text">
+         <p>During the course of this project, I learned about the importance of user research and testing in guiding your design decisions. Information I gained from the initial user survey aided me through the entire project. Assumptions I made were contradicted by user research and testing, and I realized I would have made wrong turns without this vital information. Change is inevitable in the design process, and it needs to be embraced if you are going to create a successful product.</p>
+         <a href="mailto:heather.m.kennedy513@gmail.com" class="button">Contact Me</a>
+       </div>
+       <img class="phone" src="images/phone.png" alt="mobile phone with Bevy homepage">
+     </section>
+     <footer>
+       <p class="copyright">©2018 | Heather Kennedy</p>
+       <ul class="social">
+         <li>
+           <a class="mail" href="mailto:heather.m.kennedy513@gmail.com">
+             <img src="images/Email.svg" alt="email icon">
+           </a>
+         </li>
+         <li>
+           <a class="linkedin" href="https://www.linkedin.com/in/hkennedydesign/">
+             <img src="images/LinkedIn.svg" alt="LinkedIn icon">
+           </a>
+         </li>
+         <li>
+           <a class="github" href="https://github.com/HMKennedy">
+             <img src="images/GitHub.svg" alt="GitHub icon">
+           </a>
+         </li>
+       </ul>
+     </footer>
+   </div>
   </body>
 </html>
