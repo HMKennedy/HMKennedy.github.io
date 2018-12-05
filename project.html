@@ -14,12 +14,12 @@
    <div class="container">
      <header>
        <a class="logo" href="index.html">
-         <img src="images/Logo.svg" alt="HK logo">
+         <img class="hk-logo" src="images/logo.svg" alt="HK logo">
        </a>
        <nav class="nav">
         <ul class="navigation">
          <li>
-           <a href="index.html">Portfolio</a>
+           <a class="portfolio" href="index.html">Portfolio</a>
          </li>
          <li>
            <a href="about.html">About</a>
@@ -33,7 +33,7 @@
      <!--hero-->
      <section class="bevy-hero">
        <div class="hero-image">
-         <img src="images/Laptop Bevy Homepage.png" alt="Bevy homepage">
+         <img src="images/bevy-hero.png" alt="Bevy homepage">
        </div>
        <div class="intro">
          <h1>Bevy</h1>
@@ -114,7 +114,7 @@
        </div>
        <div class="graph">
          <h3>Most used cloud storage features</h3>
-         <img src="images/Graph.svg" alt="graph showing cloud storage features">
+         <img src="images/graph.svg" alt="graph showing cloud storage features">
        </div>
      </section>
      <!--user personas-->
@@ -122,8 +122,7 @@
        <div class="black-bar">
          <h2>User Personas</h2>
        </div>
-      <img class="Megan" src="images/Megan (1).png" alt="photo of woman">
-      <img class="Adam" src="images/Adam (1).png" alt="photo of man">
+      <img class="Megan" src="images/megan.png" alt="photo of woman">
       <div class="box-m">
          <h3>Megan | Busy Working Parent</h3>
          <h4>Goals</h4>
@@ -138,6 +137,7 @@
            <li>Lacks features of desktop applications</li>
          </ul>
        </div>
+       <img class="Adam" src="images/adam.png" alt="photo of man">
        <div class="box-a">
          <h3>Adam | Tech-Savvy Millennial</h3>
          <h4>Goals</h4>
@@ -183,7 +183,7 @@
          <h2>Wireframes</h2>
        </div>
        <p>With the user flows as a guide, I created wireframes in Figma for the onboarding, adding items, existing item option, and account settings processes. </p>
-       <img src="images/WF images.png" alt="Bevy wireframes">
+       <img src="images/wf-homepage.png" alt="Bevy wireframes">
      </section>
      <!--wireframe prototype and user testing-->
      <section class="prototype">
@@ -193,17 +193,17 @@
        <p>From the wireframes, I created a prototype with InVision. In person and remote usability tests were conducted to determine where the design needed adjusting.</p>
        <div class="wf-examples">
          <div class="sign-up">
-           <img class="wf-signup" src="images/wf sign up circle.png" alt="Bevy wireframe sign up screen with circle around sign up button">
+           <img class="wf-signup" src="images/wf-signup.png" alt="Bevy wireframe sign up screen with circle around sign up button">
            <h4>Sign Up</h4>
            <p>Testers were able to navigate the onboarding process easily. </p>
          </div>
          <div class="add-photo">
-           <img class="wf-addphoto" src="images/wf add photo circle.png" alt="Bevy wireframe new photo scrren with circle around Add to Folder button">
+           <img class="wf-addphoto" src="images/wf-newphoto.png" alt="Bevy wireframe new photo scrren with circle around Add to Folder button">
            <h4>Add New Photo</h4>
            <p>When asked to add a new photo, some testers were confused by the Move to Folder button. I decided future iterations needed additional screens in this process to improve the flow and eliminate confusion.</p>
          </div>
          <div class="move">
-           <img class="wf-move" src="images/wf dashboard circle.png" alt="Bevy wireframe dashboard with circle around card options">
+           <img class="wf-move" src="images/wf-move.png" alt="Bevy wireframe dashboard with circle around card options">
            <h4>Move Item to Folder</h4>
            <p>Moving an item into a folder proved a challenge for testers. In the initial design, icons would appear when a user hovered over a card. Users did not realize this and searched the dashboard looking for a Move button. To solve for this problem, I made the icons a static feature in later iterations.</p>
          </div>
@@ -228,7 +228,7 @@
       </div>
       <div class="mark">
          <h4>Final Product</h4>
-         <img src="images/Logos.png" alt="final logo">
+         <img src="images/logos.png" alt="final logo">
       </div>
       <div class="h-line"></div>
       <div class="style-guide">
@@ -243,9 +243,9 @@
       </div>
       <div class="typography">
          <h3>Typography</h3>
-         <img src="images/Text A.png" alt="kaushan script">
-         <img src="images/Text B.png" alt="open sans semibold">
-         <img src="images/Text C.png" alt="open sans">
+         <img src="images/text-a.png" alt="kaushan script">
+         <img src="images/text-b.png" alt="open sans semibold">
+         <img src="images/text-c.png" alt="open sans">
        </div>
      </section>
      <!--high fidelity mockups-->
@@ -254,9 +254,9 @@
          <h2>High Fidelity Mockups</h2>
        </div>
        <p>Implementing the branding work and the feedback I received from the wireframe user testing, I created high fidelity mockups in Figma for mobile and desktop. I tried to solve for the issues that arose in the first round of user testing by placing icons permanently at the bottom of cards  and adding additional screens to the Add New processes.</p>
-       <img class="hf-home" src="images/hf homepage.png" alt="Bevy homepage">
-       <img class="hf-dash" src="images/hf dashboard.png" alt="Bevy dashboard">
-       <img class="hf-set" src="images/hf settings.png" alt="Bevy settings page">
+       <img class="hf-home" src="images/hf-homepage.png" alt="Bevy homepage">
+       <img class="hf-dash" src="images/hf-dashboard.png" alt="Bevy dashboard">
+       <img class="hf-set" src="images/hf-settings.png" alt="Bevy settings page">
      </section>
      <!--preference tests-->
      <section class="preference">
@@ -266,11 +266,11 @@
        <p>Preference tests were conducted to determine users’ preferences for button style, folder style and background. More than simple aesthetic preference, I believe these items had a real impact on the usability of the site.</p>
        <div class="opA">
          <h4>Option A</h4>
-         <img src="images/Folder Card 1.png" alt="folder card with bottom tab">
+         <img src="images/folder1.png" alt="folder card with bottom tab">
        </div>
        <div class="opB">
          <h4>Option B</h4>
-         <img src="images/Folder Card 2.png" alt="folder card with top tab">
+         <img src="images/folder2.png" alt="folder card with top tab">
        </div>
      </section>
      <!--high fidelity prototype and user testing-->
@@ -280,16 +280,16 @@
        </div>
        <p class="hifi-para">Based on the results of the preference tests, I updated the high fidelity mockups and created a high fidelity clickable prototype in InVision.</p>
        <div class="testing">
-         <img class="test1-im1" src="images/hf new photo 1.png" alt="Bevy drag and drop new photo">
-         <img class="test1-im2" src="images/hf new photo 2.png" alt="Bevy photo loading">
-         <img class="test1-im3" src="images/hf new photo 3.png" alt="Bevy preview of photo">
+         <img class="test1-im1" src="images/test1-im1.png" alt="Bevy drag and drop new photo">
+         <img class="test1-im2" src="images/test1-im2.png" alt="Bevy photo loading">
+         <img class="test1-im3" src="images/test1-im3.png" alt="Bevy preview of photo">
          <div class="test-1">
            <h4>Add New Photo</h4>
            <p>I added additional screens to the add new tasks which added fluidity to the flow and users had no problems with this task.</p>
          </div>
-         <img class="test2-im1" src="images/hf move 1.png" alt="Bevy dashboard">
-         <img class="test2-im2" src="images/hf move 2.png" alt="Bevy move to folder">
-         <img class="test2-im3" src="images/hf move 3.png" alt="Bevy select folder">
+         <img class="test2-im1" src="images/test2-im1.png" alt="Bevy dashboard">
+         <img class="test2-im2" src="images/test2-im2.png" alt="Bevy move to folder">
+         <img class="test2-im3" src="images/test2-im3.png" alt="Bevy select folder">
          <div class="test-2">
            <h4>Move Item to Folder</h4>
            <p>I permanently displayed the available icons at the bottom of each card, no need to hover. Users recognized the move to folder icon and were able to complete this task.</p>
@@ -304,11 +304,11 @@
        <p>A user who tested the mobile site suggested the dashboard have two columns of cards rather than one column. I created a two column design in Figma and did an additional preference test. Participants preferred the two column design, so I changed the mobile mockups and prototype to reflect this change.</p>
        <div class="original">
          <h3>Original</h3>
-         <img src="images/hf mobile 1.png" alt="mobile dashboard with one column">
+         <img src="images/mobile-1.png" alt="mobile dashboard with one column">
        </div>
        <div class="final">
          <h3>Final</h3>
-         <img src="images/hf mobile 2.png" alt="mobile dashboard with two columns">
+         <img src="images/mobile-2.png" alt="mobile dashboard with two columns">
        </div>
      </section>
      <!--what I learned-->
