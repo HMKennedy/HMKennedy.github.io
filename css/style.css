@@ -176,6 +176,7 @@ footer {
  background: #000000 url(../images/diamond.svg) no-repeat top left;
  background-size: contain;
  grid-row: 2 / span 1;
+ padding: 0 2rem;
 }
 
 .black-box-a a {
@@ -184,8 +185,10 @@ footer {
 }
 
 .project-bevy {
-  padding: 4rem 2rem;
+  position: relative;
   text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .project-right h2 {
@@ -197,6 +200,7 @@ footer {
 }
 
 .white-box-a {
+ align-self: center;
  grid-row: 1 / span 1;
  margin: 3rem 1rem;
 }
@@ -219,6 +223,7 @@ footer {
   background: #000000 url(../images/diamond.svg) no-repeat top right;
   background-size: contain;
   grid-row: 2 / span 1;
+  padding: 0 2rem;
 }
 
 .black-box-b a {
@@ -227,8 +232,10 @@ footer {
 }
 
 .project-future {
-  padding: 4rem 2rem;
+  position: relative;
   text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .project-left h2 {
@@ -265,6 +272,8 @@ footer {
 
 
 /***** About *****/
+
+
 .about-hero {
   background: url(../images/hero.svg) center / cover;
   grid-column: 1 / -1;
@@ -634,7 +643,6 @@ footer {
   padding: 8rem 2rem;
   }
 
-
 .iterations p {
   color: #ffffff;
   padding: 1rem 0 5rem 0;
@@ -668,4 +676,115 @@ footer {
 
 .phone {
   display: none;
+}
+
+
+/**** Tablet Media Queries ****/
+
+@media screen and (min-width: 575px) {
+  /* Text */
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 2.2rem;
+  }
+
+  .button {
+    font-size: 2.4rem;
+  }
+
+  /* Nav Bar */
+  header {
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 9fr 1fr;
+    padding: 2rem 0;
+  }
+
+  .logo {
+    grid-column: 2 / span 1;
+  }
+
+  .hk-logo {
+    height: auto;
+  }
+
+  .nav {
+    grid-column: 3 / span 1;
+    text-align: right;
+  }
+
+  .navigation li {
+    padding-left: 3rem;
+  }
+
+
+/**** Homepage ****/
+  .hero {
+    padding: 8rem 5rem;
+  }
+
+  .black-box-a a {
+    display: inline-block;
+  }
+
+  .black-box-b a {
+    display: inline-block;
+  }
+
+  .bottom {
+    padding: 8rem 5rem;
+  }
+
+  .bottom a {
+    display: inline-block;
+  }
+
+/**** About ****/
+  .about-main a {
+    display: inline-block;
+  }
+
+  .pattern {
+    background: url(../images/pattern-about.png) repeat-y top left;
+  }
+
+  .about-hero {
+    background: none;
+
+  }
+
+  .about-main {
+    margin: 0 auto;
+    max-width: 85rem;
+  }
+
+  .about-buttons {
+    text-align: center;
+  }
+
+  /**** Case Study Bevy ****/
+
+
 }
