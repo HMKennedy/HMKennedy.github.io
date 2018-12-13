@@ -19,37 +19,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Heather Kennedy</title>
     <link rel="shortcut icon" type="images/png" href="images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Montserrat:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
-      <header>
-        <a class="logo" href="index.html">
-          <img class="hk-logo" src="images/logo-1.svg" alt="HK logo">
-        </a>
-        <nav class="nav">
-         <ul class="navigation">
-          <li>
-            <a class="portfolio" href="index.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="mailto:heather.m.kennedy513@gmail.com">Contact</a>
-          </li>
-          </ul>
-        </nav>
-      </header>
+      <div class="navhero">
+        <header>
+          <a class="logo" href="index.html">
+            <img class="hk-logo" src="images/logo-1.svg" alt="HK logo">
+          </a>
+          <nav class="nav">
+            <ul class="navigation">
+              <li>
+                <a class="portfolio" href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+               <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
       <!--hero-->
-      <section class="hero">
-        <h1>I’m Heather Kennedy, a UX Designer in the Phoenix area.</h1>
-        <h2>I believe good design requires a dialog between designer, user, and client to achieve the ideal balance between aesthetics and functionality.<br> Take a look around.</h2>
-      </section>
+        <section class="hero">
+          <h1>I’m Heather Kennedy,<br>a UX Designer<br>in the Phoenix area.</h1>
+          <h2>I strive to make complex interfaces more intuitive through thorough user researach and testing.</h2>
+          <h2>Take a look around.</h2>
+        </section>
+      </div>
         <!--Bevy-->
-      <section class="project-right">
+      <section class="project-right" id="projects">
         <div class="white-box-a">
           <img class="Bevy-laptop" src="images/laptop-1.png" alt="Bevy dashboard">
         </div>
@@ -63,7 +66,7 @@
         </div>
       </section>
       <!--Future project-->
-      <section class="project-left">
+<!--  <section class="project-left">
         <div class="black-box-b">
           <div class="project-future">
             <h2>Future Project</h2>
@@ -75,7 +78,7 @@
         <div class="white-box-b">
           <img class="computer" src="images/apple-imac.png" alt="Apple computer">
         </div>
-      </section>
+      </section> --!>
       <!--Bottom-->
       <section class="bottom">
         <h1>Let's Connect</h1>
@@ -86,7 +89,7 @@
         <p class="copyright">©2018 | Heather Kennedy</p>
         <ul class="social">
           <li>
-            <a class="mail" href="mailto:heather.m.kennedy513@gmail.com">
+            <a class="mail" href="contact.html">
               <img src="images/email-1.svg" alt="email icon">
             </a>
           </li>

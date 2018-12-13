@@ -10,8 +10,8 @@ html {
 h1 {
   color: #000000;
   font-family: 'Josefin Sans', arial, sans-serif;
-  font-size: 2.2rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: 600;
   line-height: 140%;
   padding: 2rem 0;
 }
@@ -21,14 +21,14 @@ h2 {
   font-family: 'Montserrat', arial, sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  line-height: 140%;
+  line-height: 160%;
 }
 
 h3 {
   color: #000000;
   font-family: 'Montserrat', arial, sans-serif;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 140%;
 }
 
@@ -36,7 +36,7 @@ h4 {
   color: #000000;
   font-family: 'Montserrat', arial, sans-serif;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 140%;
 }
 
@@ -64,25 +64,35 @@ a {
   color: #000000;
   font-family: 'Montserrat', arial, sans-serif;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
+}
+
+header a:hover {
+  color: #8D295B;
 }
 
 .button {
     background-color: #8D295B;
-    border: none;
-    border-radius: 8px;
+    border-color: #8D295B;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .5rem;
     color: white;
     display: inline-block;
     font-size: 2rem;
     font-family: 'Montserrat', arial, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     margin: 3rem 0;
     padding: 1.6rem 2.4rem;
     text-align: center;
     text-decoration: none;
 }
 
+.button:hover {
+  background-color: #FFFFFF;
+  color: #8D295B;
+}
 
 img {
   max-width: 100%;
@@ -123,9 +133,6 @@ grid-row: 1 / span 1;
   padding-left: 2rem;
 }
 
-.portfolio {
-  display: none;
-}
 
 /* Footer */
 footer {
@@ -157,12 +164,32 @@ footer {
 /****** Homepage ******/
 
 /* hero section */
+
+
  .hero {
-   background: url(../images/hero-1.svg) center / cover;
+   background: #8D295B;
+   background-image: url(../images/hero-black.svg);
+   background: url(../images/hero-black.svg), linear-gradient(#8D295B, #000000);
+   background-position: center;
+   background-size: cover;
    grid-column: 1 / -1;
    padding: 8rem 2rem;
  }
 
+ .hero h1 {
+   color: #ffffff;
+   font-size: 4rem;
+ }
+
+ .hero h2 {
+   color: #ffffff;
+   font-weight: 400;
+   padding-bottom: 2rem;
+ }
+
+.bottom h2 {
+  font-weight: 400;
+}
 
 /* Bevy section */
 .project-right {
@@ -271,33 +298,77 @@ footer {
 
 
 /***** About *****/
-
-
-.about-hero {
-  background: url(../images/hero-1.svg) center / cover;
+.about {
   grid-column: 1 / -1;
-  padding: 8rem 2rem;
+  padding: 2rem;
 }
 
 .about-hero img {
   display: block;
   margin: 0 auto;
+  max-height: 20rem;
   width: auto;
+}
+
+.about .me {
+  display: none;
 }
 
 .about-main {
   grid-column: 1 / -1;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem 5rem 2rem;
 }
 
 .about-main p {
   padding-bottom: 3rem;
 }
 
-.about-main a {
+.about-buttons a {
     display: flex;
     justify-content: center;
 }
+
+/**** Contact ****/
+.contact-hero {
+  background: url(../images/contact-hero.svg) center / contain;
+  grid-column: 1 / -1;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 5rem;
+}
+
+.contact-form {
+  grid-column: 1 / -1;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact-form h4 {
+  padding-bottom: 2rem;
+}
+
+input, textarea{
+  border: .1rem solid #8D295B;
+  border-radius: .3rem;
+  color: #000000;
+  display: block;
+  font-family: 'Montserrat', arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  padding: .8rem;
+  margin: 0 auto 3rem auto;
+  max-width: 48rem;
+  width: 100%;
+}
+
+textarea {
+  min-height: 15rem;
+}
+
 
 /***** Case Study-Bevy *****/
 
@@ -685,7 +756,7 @@ footer {
 
 /**** Tablet Media Queries ****/
 
-@media screen and (min-width: 575px) {
+@media all and (min-width: 575px) {
   /* Text */
   h1 {
     font-size: 3.8rem;
@@ -749,6 +820,14 @@ footer {
     padding: 8rem 5rem;
   }
 
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero h2 {
+    max-width: 85rem;
+  }
+
   .black-box-a a {
     display: inline-block;
   }
@@ -761,31 +840,35 @@ footer {
     padding: 8rem 5rem;
   }
 
+  .bottom h2 {
+    margin: 0 auto;
+    max-width: 85rem;
+  }
+
   .bottom a {
     display: inline-block;
   }
 
 /**** About ****/
-  .about-main a {
+
+.about img {
+  max-height: 40rem;
+}
+
+.about-buttons {
+  text-align: center;
+}
+
+.about-buttons .button{
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+  /**** Contact ****/
+  .contact-form .button {
     display: inline-block;
-  }
-
-  .pattern {
-    background: url(../images/pattern-about.png) repeat-y top left;
-  }
-
-  .about-hero {
-    background: none;
-
-  }
-
-  .about-main {
-    margin: 0 auto;
-    max-width: 85rem;
-  }
-
-  .about-buttons {
-    text-align: center;
+    width: auto;
   }
 
   /**** Case Study Bevy ****/
@@ -1058,16 +1141,13 @@ footer {
 
       .learned a {
         display: inline-block;
+        margin-right: 4rem;
       }
 }
 
 /**** Desktop Media Queries ****/
 
-@media screen and (min-width: 991px) {
-  /*nav bar*/
-  .portfolio {
-    display: inline;
-  }
+@media all and (min-width: 991px) {
 
   /*footer*/
   footer {
@@ -1151,6 +1231,47 @@ footer {
       padding: 12rem 20rem;
     }
 
+/*----About----*/
+
+.about-main a {
+  display: inline-block;
+}
+
+.about {
+  display: grid;
+  grid-gap: 2rem;
+  grid-column: 1fr 4fr 6fr 1fr;
+  }
+
+  .about-hero {
+    background: url(../images/pattern-about.png) no-repeat top center;
+    background-size: contain;
+    grid-column: 2 / 3;
+  }
+
+  .about-hero img {
+    max-height: none;
+    padding-top: 3rem;
+  }
+
+  .about .me-circle {
+    display: none;
+  }
+
+  .about .me {
+    display: block;
+  }
+
+  .about-main {
+    grid-column: 3 / 4;
+    padding-top: 10rem;
+  }
+
+.about-buttons {
+  grid-column: 2 / 4;
+}
+
+/*----Bevy Case Study----*/
     /* Hero */
   .bevy-hero {
     display: grid;
