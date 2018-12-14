@@ -164,10 +164,8 @@ footer {
 
 /* hero section */
  .hero {
-   background: #000000;
-   background-image: url(../images/hero-black.svg);
-   background: url(../images/hero-black.svg), linear-gradient(#8D295B, #000000);
-   background-position: top center;
+   background: url(../images/hero.png);
+   background-position: center;
    background-size: cover;
    grid-column: 1 / -1;
    padding: 8rem 2rem;
@@ -186,7 +184,6 @@ footer {
 
 /* Bevy section */
 .projects-home {
-  background-color: #000000;
   grid-column: 1 / -1;
 }
 
@@ -194,6 +191,12 @@ footer {
   background: #ffffff;
   margin: 8rem 3rem;
   padding: 4rem 1rem 2rem 1rem;
+}
+
+.project-right img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
 }
 
 .text-right a {
@@ -248,6 +251,7 @@ footer {
 
 .about-main p {
   padding-bottom: 3rem;
+  max-width: 85rem;
 }
 
 .about-buttons a {
@@ -624,6 +628,11 @@ textarea {
 
 .hifi-testing p {
     padding: 1rem 0;
+}
+
+.hifi-testing a {
+    display: flex;
+    justify-content: center;
 }
 
 .hifi-testing img {
@@ -1041,6 +1050,10 @@ textarea {
         max-width: 85rem;
       }
 
+      .hifi-testing a {
+        display: inline-block;
+      }
+
       /*iterations*/
       .iterations {
         display: grid;
@@ -1352,7 +1365,6 @@ textarea {
 .box-a {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-
 }
 
 .adam {
@@ -1589,6 +1601,7 @@ textarea {
 .hifi-para {
   grid-column: 3 / 5;
   }
+
 
 .testing {
   display: grid;
