@@ -165,10 +165,10 @@ footer {
 /* hero section */
  .hero {
    background: url(../images/hero.png);
-   background-position: center;
+   background-position: top;
    background-size: cover;
    grid-column: 1 / -1;
-   padding: 8rem 2rem;
+   padding: 9rem 2rem;
  }
 
  .hero h1 {
@@ -188,9 +188,7 @@ footer {
 }
 
 .project-right {
-  background: #ffffff;
-  margin: 8rem 3rem;
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 8rem 2rem;
 }
 
 .project-right img {
@@ -753,7 +751,7 @@ textarea {
 
 /**** Homepage ****/
   .hero {
-    padding: 8rem 5rem;
+    padding: 10rem 5rem;
   }
 
   .hero h1 {
@@ -765,8 +763,7 @@ textarea {
   }
 
   .project-right {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding: 8rem 5rem;
   }
 
   .text-right a {
@@ -1139,7 +1136,7 @@ textarea {
     grid-column: 2 / 3;
     grid-template-columns: 6fr 4fr;
     grid-gap: 2rem;
-    margin: 10rem 0 20rem 0;
+    margin: 14rem 0;
   }
 
   .text-right {
