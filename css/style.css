@@ -179,7 +179,7 @@ footer {
  .hero h2 {
    color: #ffffff;
    font-weight: 400;
-   padding-bottom: 2rem;
+   padding-bottom: 1rem;
  }
 
 /* Bevy section */
@@ -759,6 +759,7 @@ textarea {
   }
 
   .hero h2 {
+    font-size: 2.4rem;
     max-width: 85rem;
   }
 
