@@ -168,6 +168,7 @@ footer {
    background-image: url(../images/hero-black.svg);
    background: url(../images/hero-black.svg), linear-gradient(#8D295B, #000000);
    background-position: top center;
+   background-size: cover;
    grid-column: 1 / -1;
    padding: 8rem 2rem;
  }
