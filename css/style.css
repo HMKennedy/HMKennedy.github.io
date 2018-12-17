@@ -12,7 +12,7 @@ h1 {
   font-family: 'Josefin Sans', arial, sans-serif;
   font-size: 3rem;
   font-weight: 600;
-  line-height: 140%;
+  line-height: 120%;
   padding: 2rem 0;
 }
 
@@ -21,7 +21,7 @@ h2 {
   font-family: 'Montserrat', arial, sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  line-height: 160%;
+  line-height: 150%;
 }
 
 h3 {
@@ -46,6 +46,7 @@ p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 140%;
+  max-width: 70rem;
 }
 
 ul {
@@ -77,14 +78,14 @@ header a:hover {
     border-color: #8D295B;
     border-radius: 1rem;
     border-style: solid;
-    border-width: .5rem;
+    border-width: .3rem;
     color: white;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'Montserrat', arial, sans-serif;
     font-weight: 400;
     margin: 3rem 0;
-    padding: 1.6rem 2.4rem;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
 }
@@ -114,7 +115,7 @@ header {
 }
 
 .logo {
-grid-row: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .hk-logo {
@@ -187,6 +188,11 @@ footer {
   grid-column: 1 / -1;
 }
 
+.featured {
+  padding-top: 8rem;
+  text-align: center;
+}
+
 .project-right {
   padding: 8rem 2rem;
 }
@@ -195,6 +201,10 @@ footer {
   display: block;
   margin: 0 auto;
   width: auto;
+}
+
+.text-right h4 {
+  font-weight: 400;
 }
 
 .text-right a {
@@ -249,7 +259,10 @@ footer {
 
 .about-main p {
   padding-bottom: 3rem;
-  max-width: 85rem;
+}
+
+span {
+  font-weight: 600;
 }
 
 .about-buttons a {
@@ -367,7 +380,6 @@ textarea {
   padding-bottom: 5rem;
 }
 
-
 /* Competitive Analysis */
 .comp-ana {
   grid-column: 1 / -1;
@@ -396,14 +408,14 @@ textarea {
   padding-left: 2rem;
 }
 
-.graph h3 {
-  padding-bottom: 2rem;
-}
-
 .competition {
   display: none;
 }
 
+.ca-text a {
+    display: flex;
+    justify-content: center;
+}
 
 /* User Research */
 .user-research {
@@ -413,6 +425,11 @@ textarea {
 
 .ur-text {
   padding: 1rem 0;
+}
+
+.user-research a {
+    display: flex;
+    justify-content: center;
 }
 
 .stats {
@@ -430,6 +447,10 @@ textarea {
   width: auto;
 }
 
+.graph h3 {
+  padding-bottom: 2rem;
+}
+
 /* User Personas */
 .user-personas {
   grid-column: 1 / -1;
@@ -444,12 +465,16 @@ textarea {
   margin-left: 2rem;
 }
 
+.megan-mobile {
+  padding-bottom: 1rem;
+}
+
 .megan {
   display: none;
 }
 
 .adam-mobile {
-  padding-top: 4rem;
+  padding: 6rem 0 1rem 0;
 }
 
 .adam {
@@ -498,27 +523,24 @@ textarea {
 
 /* Wireframes */
 .wireframes {
-  background-color: #000000;
   grid-column: 1 / -1;
-  padding: 8rem 2rem;
-}
-
-.white-bar {
-  background-color: #ffffff;
-}
-
-.white-bar h2 {
-  color: #000000;
-  text-align: center;
+  padding: 0 2rem 8rem 2rem;
 }
 
 .wireframes p {
-  color: #ffffff;
   padding-top: 1rem;
 }
 
+.wireframes a {
+  display: flex;
+  justify-content: center;
+}
+
+.wireframes h3 {
+  padding: 6rem 0 1rem 0;
+}
+
 .wireframes img {
-  padding-top: 4rem;
   display: block;
   margin: 0 auto;
   width: auto;
@@ -527,36 +549,29 @@ textarea {
 /* Wireframe Prototype and User Testing */
 .prototype {
   grid-column: 1 / -1;
-  padding: 8rem 2rem;
+  padding: 0 2rem 8rem 2rem;
+}
+
+.prototype h3 {
+  padding-top: 6rem;
+  text-align: center;
 }
 
 .prototype h4 {
-  padding: 2rem 0 1rem 0;
+  padding-top: 1rem;
 }
 
 .prototype img {
-  padding-top: 6rem;
   display: block;
   margin: 0 auto;
+  padding-top: 6rem;
   width: auto;
 }
-
 
 /* Branding */
 .branding {
   grid-column: 1 / -1;
   padding: 0 2rem 8rem 2rem;
-}
-
-.branding h3 {
-  font-weight: 600;
-  padding-bottom: 2rem;
-}
-
-.branding h4 {
-  font-weight: 600;
-  padding: 5rem 0 2rem 0;
-  text-align: center;
 }
 
 .branding img {
@@ -574,8 +589,12 @@ textarea {
   justify-content: center;
 }
 
-.typography {
-  padding-top: 3rem;
+.branding h4 {
+  padding: 4rem 0 1rem 0;
+}
+
+.style-guide {
+  margin-top: 6rem;
 }
 
 /* High Fidelity Mockups */
@@ -588,8 +607,11 @@ textarea {
   padding-top: 1rem;
 }
 
+.hi-fi h3 {
+  padding: 6rem 0 1rem 0;
+}
+
 .hi-fi img {
-  padding: 4rem 0;
   display: block;
   margin: 0 auto;
   width: auto;
@@ -598,8 +620,7 @@ textarea {
 /* Preference Tests */
 .preference {
   grid-column: 1 / -1;
-  background-color: #000000;
-  padding: 8rem 2rem;
+  padding: 0 2rem 8rem 2rem;
 }
 
 .preference img {
@@ -609,20 +630,18 @@ textarea {
 }
 
 .preference p {
-  color: #ffffff;
   padding-top: 1rem;
 }
 
-.preference h4 {
-    color: #ffffff;
-    padding: 5rem 0 2rem 0;
+.preference h3 {
+    padding: 4rem 0 1rem 0;
 }
 
 /* High Fidelity Testing */
 .hifi-testing {
   grid-column: 1 / -1;
-  padding: 8rem 2rem;
-  }
+  padding: 0 2rem 8rem 2rem
+}
 
 .hifi-testing p {
     padding: 1rem 0;
@@ -636,30 +655,31 @@ textarea {
 .hifi-testing img {
     display: block;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding-top: 6rem;
     width: auto;
   }
 
+  .hifi-testing h3 {
+    padding-top: 6rem;
+    text-align: center;
+  }
+
   .hifi-testing h4 {
-    font-weight: 600;
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 
 /* Iterations */
 .iterations {
   grid-column: 1 / -1;
-  background-color: #000000;
-  padding: 8rem 2rem;
-  }
+  padding: 0 2rem 8rem 2rem
+}
 
 .iterations p {
-  color: #ffffff;
-  padding: 1rem 0 5rem 0;
-  }
+  padding: 1rem 0 6rem 0;
+}
 
 .iterations h3 {
-  color: #ffffff;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .iterations img {
@@ -669,14 +689,26 @@ textarea {
 }
 
 .final {
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 
 /* What I Learned */
 .learned {
   grid-column: 1 / -1;
-  padding: 8rem 2rem;
-  }
+  padding: 0 2rem 8rem 2rem
+}
+
+.to-top {
+  padding-top: 2rem;
+}
+
+.to-top a {
+    color: #8D295B;
+}
+
+.to-top a:hover {
+  color: #000000;
+}
 
 .learned a {
   display: flex;
@@ -721,7 +753,7 @@ textarea {
   }
 
   .button {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   /* Nav Bar */
@@ -735,9 +767,9 @@ textarea {
     grid-column: 2 / span 1;
   }
 
-  .hk-logo {
-    height: auto;
-  }
+.hk-logo {
+  height: auto;
+}
 
   .nav {
     grid-column: 3 / span 1;
@@ -760,7 +792,7 @@ textarea {
 
   .hero h2 {
     font-size: 2.4rem;
-    max-width: 85rem;
+    max-width: 70rem;
   }
 
   .project-right {
@@ -777,7 +809,7 @@ textarea {
 
   .bottom h2 {
     margin: 0 auto;
-    max-width: 85rem;
+    max-width: 70rem;
   }
 
   .bottom a {
@@ -824,7 +856,6 @@ textarea {
 
   .deliverables {
     margin: 0 auto;
-    max-width: 85rem;
   }
 
   /*problem solution*/
@@ -834,48 +865,29 @@ textarea {
 
   .problem {
     margin: 0 auto;
-    max-width: 85rem;
     padding-bottom: 7rem;
   }
 
   .solution {
     margin: 0 auto;
-    max-width: 85rem;
   }
 
   /*competitive analysis*/
   .comp-ana {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 5fr 1fr;
     padding: 8rem 4rem;
   }
 
-   .black-bar {
-     grid-column: 1 / -1;
-   }
-
-    .ca-text {
-      grid-column: 1 / 2;
-    }
-
-    .competition {
-      display: block;
-      grid-column: 2 / 3;
-      text-align: center;
-    }
-
-    .competition h4 {
-      padding-bottom: 2rem;
-    }
+  .ca-text a {
+    display: inline-block;
+  }
 
     /*user research*/
     .user-research {
       padding: 0 4rem 8rem 4rem;
     }
 
-    .ur-text {
-      max-width: 85rem;
+    .user-research a {
+      display: inline-block;
     }
 
     .stats{
@@ -911,20 +923,20 @@ textarea {
 
     .box-a {
       grid-column: 1 / 3;
-      margin-top: 3rem;
+      margin-top: 6rem;
     }
 
     .adam {
       display: block;
       grid-column: 3 / 4;
-      margin-top: 3rem;
+      margin-top: 6rem;
     }
 
     /*user stories*/
     .user-stories {
       background-image: url("../images/user-stories.png");
-      background-repeat: repeat;
       background-position: center top;
+      background-size: cover;
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: 2fr 2fr 2fr;
@@ -950,8 +962,8 @@ textarea {
     /*user flows*/
     .user-flows {
       background-image: url("../images/user-flow.png");
-      background-repeat: repeat;
       background-position: center top;
+      background-size: cover;
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: 2fr 2fr 2fr;
@@ -976,32 +988,26 @@ textarea {
 
     /*wireframes*/
     .wireframes {
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-columns: 3fr 3fr;
       padding: 8rem 4rem;
     }
 
-    .white-bar {
-      grid-column: 1 / -1;
-    }
-
-    .wireframes p {
-      grid-column: 1 / -1;
-      max-width: 85rem;
-    }
-
-    .wireframes img {
-      display: inline;
+    .wireframes a {
+      display: inline-block;
     }
 
     /*wireframe prototype and user testing*/
      .prototype {
-       padding: 8rem 4rem 8rem 4rem;
+       padding: 0 4rem 8rem 4rem;
      }
 
-     .prototype p {
-       max-width: 85rem;
+     .wf-examples h4 {
+       padding-left: 5rem;
+       padding-right: 5rem;
+     }
+
+     .wf-examples p {
+       padding-left: 5rem;
+       padding-right: 5rem;
      }
 
      /*branding*/
@@ -1013,43 +1019,33 @@ textarea {
        display: inline-block;
      }
 
-     .typography img {
-       display: inline;
-     }
-
      /*high fidelity mockups*/
       .hi-fi {
         padding: 0 4rem 8rem 4rem;
       }
 
-      .hi-fi p {
-        max-width: 85rem;
-      }
-
       /*preference tests*/
       .preference {
-        display: grid;
-        grid-gap: 2rem;
-        grid-template-columns: 3fr 3fr;
-        padding: 8rem 4rem 8rem 4rem;
-      }
-
-      .preference p {
-        grid-column: 1 / -1;
-        max-width: 85rem;
+        padding: 0 4rem 8rem 4rem;
       }
 
       /*high fidelity prototype and user testing*/
       .hifi-testing {
-        padding: 8rem 4rem 8rem 4rem;
-      }
-
-      .hifi-testing p {
-        max-width: 85rem;
+        padding: 0 4rem 8rem 4rem;
       }
 
       .hifi-testing a {
         display: inline-block;
+      }
+
+      .testing h4 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+
+      .testing p {
+        padding-left: 5rem;
+        padding-right: 5rem;
       }
 
       /*iterations*/
@@ -1057,12 +1053,11 @@ textarea {
         display: grid;
         grid-gap: 2rem;
         grid-template-columns: 3fr 3fr;
-        padding: 8rem 4rem 8rem 4rem;
+        padding: 0 4rem 8rem 4rem;
       }
 
       .iterations p {
         grid-column: 1 / -1;
-        max-width: 85rem;
       }
 
       .final {
@@ -1071,22 +1066,26 @@ textarea {
 
       /*what I learned*/
       .learned {
-        padding: 8rem 4rem 8rem 4rem;
-      }
-
-      .learned p {
-        max-width: 85rem;
+        padding: 0 4rem 8rem 4rem;
       }
 
       .learned a {
         display: inline-block;
-        margin-right: 4rem;
+      }
+
+      .to-top {
+        display: block;
       }
 }
 
 /**** Desktop Media Queries ****/
 
 @media all and (min-width: 991px) {
+
+/*nav*/
+.hk-logo {
+  max-height: 8rem;
+}
 
   /*footer*/
   footer {
@@ -1130,6 +1129,11 @@ textarea {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1fr 10fr 1fr;
+}
+
+  .featured {
+    grid-column: 2 / 3;
+    padding-top: 14rem;
   }
 
   .project-right {
@@ -1137,7 +1141,8 @@ textarea {
     grid-column: 2 / 3;
     grid-template-columns: 6fr 4fr;
     grid-gap: 2rem;
-    margin: 14rem 0;
+    margin: 12rem 0;
+    padding: 0;
   }
 
   .text-right {
@@ -1247,17 +1252,12 @@ textarea {
   .comp-ana {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 1fr 1fr 6fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
     padding: 12rem 0;
   }
 
-  .black-bar {
-    grid-column: 2 / 4;
-  }
-
-  .black-bar h2 {
-    padding-left: 1rem;
-    text-align: left;
+  .comp-ana .black-bar {
+    grid-column: 2 / 5;
   }
 
   .ca-text {
@@ -1266,50 +1266,47 @@ textarea {
 
   .competition {
     display: grid;
-    grid-column: 4 / 5;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 3 / 4;
     grid-gap: 2rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
   }
 
-  .google-icon {
+  .google {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
-  .google {
+  .pinterest {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
 
-  .competition img {
-    margin: auto;
-  }
-
-  .competition h4 {
-    margin: auto 0;
+  .shutterfly {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
   }
 
   /* User Research */
 .user-research {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 6fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
   padding: 0 0 12rem 0;
 }
 
 .user-research .black-bar {
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
 }
 .ur-text {
   grid-column: 3 / 4;
 }
 
 .stats {
-  grid-column: 3 / 5;
+  grid-column: 2 / 5;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 2fr 2fr 2fr 3fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 
 .stat-a {
@@ -1329,7 +1326,7 @@ textarea {
 }
 
 .graph {
-  grid-column: 3 / 6;
+  grid-column: 3 / 4;
 }
 
 /*User Personas*/
@@ -1341,8 +1338,7 @@ textarea {
 }
 
 .user-personas .black-bar {
-  grid-column: 2 / 5;
-
+  grid-column: 2 / 6;
 }
 
 .megan {
@@ -1363,6 +1359,7 @@ textarea {
 .box-a {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  margin-top: 12rem;
 }
 
 .adam {
@@ -1373,7 +1370,8 @@ textarea {
   display: block;
   grid-column: 3 / 6;
   grid-row: 3 / 4;
-  padding-top: 0;
+  margin-top: 12rem;
+  padding: 0;
 }
 
 /* User Stories */
@@ -1391,7 +1389,6 @@ textarea {
 
 .black-bar-mini {
   margin-top: 3rem;
-  width: 50%;
 }
 
 /* User Flows */
@@ -1411,20 +1408,15 @@ textarea {
 .wireframes {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 4fr 2fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 3fr 3fr 2fr 1fr;
   padding: 12rem 0;
 }
 
-.white-bar {
-  grid-column: 2 / 5;
+.black-bar {
+  grid-column: 2 / 6;
 }
 
-.white-bar h2 {
-  padding-left: 1rem;
-  text-align: left;
-}
-
-.wireframes p {
+.wf-para {
   grid-column: 3 / 5;
 }
 
@@ -1440,12 +1432,12 @@ textarea {
 .prototype {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 6fr 4fr;
-  padding: 12rem 0;
+  grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+  padding: 0 0 12rem 0;
 }
 
 .prototype .black-bar {
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
 }
 
 .prototype p {
@@ -1453,11 +1445,23 @@ textarea {
   padding-top: 1rem;
 }
 
+.prototype h3 {
+  grid-column: 1 / -1;
+}
+
 .wf-examples {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 4fr 4fr 4fr;
   grid-column: 1 / -1;
+}
+
+.wf-examples h4 {
+  padding: 2rem 0 0 0;
+}
+
+.wf-examples p {
+  padding: 0;
 }
 
 .sign-up {
@@ -1479,45 +1483,32 @@ textarea {
 .branding {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr 4fr 1fr 1fr 1fr 1fr;
-  padding: 12rem 0;
+  grid-template-columns: 1fr 2fr 1fr 4fr 1fr 2fr 1fr;
+  padding: 0 0 12rem 0;
 }
 
 .branding .black-bar {
-  grid-column: 2 / 6;
+  grid-column: 2 / 7;
+}
+
+.branding img {
+  display: inline;
 }
 
 .logos {
   grid-column: 3 / 6;
 }
 
-.branding h2 {
-  padding-bottom: 1rem;
-}
-
-.branding h3 {
-  padding: 4rem 0;
-}
-
-.branding h4 {
-  padding: 4rem 0;
-}
-
 .sketches {
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
 }
 
 .it {
-  grid-column: 5 / 6;
+  grid-column: 4 / 5;
 }
 
 .mark {
-  grid-column: 6 / 9;
-}
-
-.branding .h-line {
-  grid-column: 2 / 9;
-  margin: 5rem 0;
+  grid-column: 5 / 7;
 }
 
 .style-guide {
@@ -1525,19 +1516,19 @@ textarea {
 }
 
 .color {
-  grid-column: 4 / 7;
+  grid-column: 3 / 6;
 }
 
 .typography {
-  grid-column: 4 / -1;
+  grid-column: 3 / -1;
 }
 
 /* High Fidelity Mockups */
 .hi-fi {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr 3fr 2fr 1fr 2fr 1fr;
-  padding: 12rem 0;
+  grid-template-columns: 1fr 2fr 3fr 3fr 2fr 1fr;
+  padding: 0 0 12rem 0;
 }
 
 .hi-fi .black-bar {
@@ -1545,51 +1536,59 @@ textarea {
 }
 
 .hi-fi p {
-  grid-column: 3 / 6;
+  grid-column: 3 / 5;
 }
 
 .hf-home {
-  grid-column: 4 / 7;
+  grid-column: 3 / 5;
 }
 
 .hf-dash {
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
 }
 
 .hf-set {
-  grid-column: 5 / 8;
+  grid-column: 4 / 6;
+}
+
+.hi-fi img {
+  display: inline;
 }
 
 /* Preference Tests */
 .preference {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 4fr 1fr 1fr 3fr 1fr;
-  padding: 12rem 0;
+  grid-template-columns: 1fr 2fr 3fr 3fr 2fr 1fr;
+  padding: 0 0 12rem 0;
 }
 
-.preference .white-bar {
+.preference .black-bar {
   grid-column: 2 / 6;
 }
 
 .preference p {
-  grid-column: 3 / 6;
+  grid-column: 3 / 5;
+}
+
+.preference h3 {
+  text-align: center;
 }
 
 .opA {
-  grid-column: 3 / 4;
+  grid-column: 2 / 4;
 }
 
 .opB {
-  grid-column: 5 / 7;
+  grid-column: 4 / 6;
 }
 
 /* High Fidelity Testing */
 .hifi-testing {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 2fr 4fr 4fr;
-  padding: 12rem 0;
+  grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+  padding: 0 0 12rem 0;
   }
 
 .hifi-testing .black-bar {
@@ -1597,77 +1596,84 @@ textarea {
   }
 
 .hifi-para {
-  grid-column: 3 / 5;
+  grid-column: 3 / 4;
   }
 
+.hifi-testing h3 {
+  grid-column: 1 / -1;
+}
 
 .testing {
   display: grid;
   grid-column: 1 / -1;
   grid-gap: 2rem;
-  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-columns: 3fr 1fr 4fr 1fr 3fr;
   padding: 0 3rem;
 }
 
 .test1-im1 {
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
 }
 
 .test1-im2 {
-  grid-column: 2 / 3;
-}
-
-.test1-im3 {
   grid-column: 3 / 4;
 }
 
+.test1-im3 {
+  grid-column: 4 / 6;
+}
+
 .test-1 {
-    grid-column: 1 / span 2;
+    grid-column: 2 / 5;
 }
 
 .test2-im1 {
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
 }
 
 .test2-im2 {
-  grid-column: 2 / 3;
+  grid-column: 3 / 4;
 }
 
 .test2-im3 {
-  grid-column: 3 /4;
+  grid-column: 4 /6;
 }
 
 .test-2 {
-    grid-column: 1 / span 2;
+    grid-column: 2 / 5;
+  }
+
+  .testing p {
+    max-width: 80rem;
   }
 
   /* Iterations */
   .iterations {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 1fr 1fr 4fr 1fr 1fr 3fr 1fr;
-    padding: 12rem 0;
+    grid-template-columns: 1fr 2fr 3fr 3fr 2fr 1fr;
+    padding: 0 0 12rem 0;
     }
 
-  .iterations .white-bar {
+  .iterations .black-bar {
     grid-column: 2 / 6;
     }
 
   .iterations p {
-    grid-column: 3 / 6;
+    grid-column: 3 / 5;
     }
 
-  .iterations h3 {
-    color: #ffffff;
-  }
-
   .original {
-      grid-column: 3 / 4;
+      grid-column: 2 / 4;
     }
 
   .final {
-    grid-column: 5 / 7;
+    grid-column: 4 / 6;
    }
+
+  .iterations img {
+    display: inline;
+  }
 
    /* What I Learned */
    .learned {
@@ -1678,7 +1684,7 @@ textarea {
      }
 
    .learned .black-bar {
-     grid-column: 2 / 4;
+     grid-column: 2 / 5;
      }
 
    .learned-text {
@@ -1690,18 +1696,5 @@ textarea {
      display: block;
      grid-column: 4 / 5;
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
