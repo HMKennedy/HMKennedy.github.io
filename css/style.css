@@ -220,7 +220,7 @@ footer {
 
 /* Closing */
  .bottom {
-   background: url(../images/hp-pattern.svg) center / cover;
+   background: url(../images/hp-pattern.svg) top / cover;
    grid-column: 1 / -1;
    padding: 8rem 2rem;
    text-align: center;
