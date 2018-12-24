@@ -148,6 +148,7 @@ footer {
   font-family: 'Montserrat', arial, sans-serif;
   font-size: 1.6rem;
   grid-row: 2 / span 1;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -781,7 +782,6 @@ textarea {
     padding-left: 3rem;
   }
 
-
 /**** Homepage ****/
   .hero {
     padding: 10rem 5rem;
@@ -1091,7 +1091,7 @@ textarea {
   /*footer*/
   footer {
     grid-gap: 2rem;
-    grid-template-columns: 1fr 3fr 7fr 1fr;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
     grid-template-rows: 1fr;
     padding: 0;
   }
@@ -1100,6 +1100,7 @@ textarea {
     align-self: center;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    text-align: left;
   }
 
   .social {
