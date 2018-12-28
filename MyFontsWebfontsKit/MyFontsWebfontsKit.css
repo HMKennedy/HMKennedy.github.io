@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3691237, 2018-12-27T01:07:28-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: SaveurSans-Regular by Arkitype
+ * URL: https://www.myfonts.com/fonts/arkitype/saveur-sans/regular/
+ * Copyright: Copyright &#x00A9; 2017 by Andrew Footit. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3691237
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3852e5");
+
+  
+@font-face {font-family: 'SaveurSans-Regular';src: url('webfonts/3852E5_0_0.eot');src: url('webfonts/3852E5_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3852E5_0_0.woff2') format('woff2'),url('webfonts/3852E5_0_0.woff') format('woff'),url('webfonts/3852E5_0_0.ttf') format('truetype');}
+ 
