@@ -192,6 +192,7 @@ footer {
 
 .statement span {
   border-bottom: .2rem solid;
+  letter-spacing: .5rem;
 }
 
 /* Bevy section */
@@ -278,7 +279,14 @@ footer {
 
 .about-main {
   grid-column: 1 / -1;
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.about-main img {
+  display: block;
+  margin: 0 auto;
+  height: 30rem;
+  padding-bottom: 3rem;
 }
 
 .about-main p {
@@ -313,26 +321,27 @@ span {
 }
 
 .contact-form h4 {
+  font-weight: 400;
   padding-bottom: 2rem;
 }
 
 input, textarea{
-  border: .1rem solid #8D295B;
-  border-radius: .3rem;
+  border: .1rem solid #98752e;
   color: #000000;
   display: block;
   font-family: 'Montserrat', arial, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 140%;
   padding: .8rem;
   margin: 0 auto 3rem auto;
   max-width: 48rem;
+  min-height: 5rem;
   width: 100%;
 }
 
 textarea {
-  min-height: 15rem;
+  min-height: 20rem;
 }
 
 
@@ -999,8 +1008,8 @@ textarea {
 
 .about-buttons .button{
   display: inline-block;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
   /**** Contact ****/
@@ -1308,10 +1317,6 @@ textarea {
 
 /*----About----*/
 
-.about-main a {
-  display: inline-block;
-}
-
 .about {
   display: grid;
   grid-gap: 2rem;
@@ -1339,11 +1344,14 @@ textarea {
 
   .about-main {
     grid-column: 3 / 4;
-    padding-top: 10rem;
+  }
+
+  .about-main img {
+    height: 40rem;
   }
 
 .about-buttons {
-  grid-column: 2 / 4;
+  grid-column: 3 / 4;
 }
 
 /*----Bevy Case Study----*/
