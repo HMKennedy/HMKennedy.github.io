@@ -171,7 +171,7 @@ footer {
 
 /* hero section */
  .hero {
-   background: url(../images/hero.png);
+   background: url(../images/hero.svg);
    background-position: top;
    background-size: cover;
    grid-column: 1 / -1;
@@ -181,18 +181,25 @@ footer {
  .hero h1 {
    color: #f9f6f1;
    font-size: 4rem;
+   padding-bottom: 3rem;
  }
 
  .hero p {
    color: #f9f6f1;
    font-size: 2rem;
+   font-family: 'SaveurSans-Regular', arial, sans-serif;
    font-weight: 400;
+   letter-spacing: .3rem;
+   line-height: 145%;
    padding-bottom: 1rem;
  }
 
 .statement span {
-  border-bottom: .2rem solid;
+  font-size: 5rem;
   letter-spacing: .5rem;
+  text-shadow:
+         .4rem .4rem 0rem #98752e,
+         .7rem .7rem 0rem rgba(0, 0, 0, 0.2);
 }
 
 /* Bevy section */
@@ -293,7 +300,7 @@ footer {
   padding-bottom: 3rem;
 }
 
-span {
+.bio span {
   font-weight: 600;
 }
 
@@ -968,6 +975,10 @@ textarea {
   .hero p {
     font-size: 2.6rem;
     max-width: 70rem;
+  }
+
+  .statement span {
+    font-size: 7rem;
   }
 
   .featured {
