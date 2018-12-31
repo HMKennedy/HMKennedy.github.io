@@ -188,10 +188,10 @@ footer {
  .hero p {
    color: #f9f6f1;
    font-size: 2rem;
-   font-family: 'SaveurSans-Regular', arial, sans-serif;
+
    font-weight: 400;
-   letter-spacing: .3rem;
-   line-height: 145%;
+
+
    padding-bottom: 1rem;
  }
 
@@ -201,6 +201,12 @@ footer {
   text-shadow:
          .4rem .4rem 0rem #98752e,
          .7rem .7rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.sentence span {
+  font-family: 'SaveurSans-Regular', arial, sans-serif;
+  letter-spacing: .3rem;
+  line-height: 145%;
 }
 
 /* Bevy section */
