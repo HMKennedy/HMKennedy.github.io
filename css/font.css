@@ -24,4 +24,4 @@
 @import url("//hello.myfonts.net/count/3852e5");
 
 
-@font-face {font-family: 'SaveurSans-Regular';src: url('css/3852E5_0_0.eot');src: url('css/3852E5_0_0.eot?#iefix') format('embedded-opentype'),url('css/3852E5_0_0.woff2') format('woff2'),url('css/3852E5_0_0.woff') format('woff'),url('css/3852E5_0_0.ttf') format('truetype');}
+@font-face {font-family: 'SaveurSans-Regular';src: url('../css/3852E5_0_0.eot');src: url('../css/3852E5_0_0.eot?#iefix') format('embedded-opentype'),url('../css/3852E5_0_0.woff2') format('woff2'),url('../css/3852E5_0_0.woff') format('woff'),url('../css/3852E5_0_0.ttf') format('truetype');}
