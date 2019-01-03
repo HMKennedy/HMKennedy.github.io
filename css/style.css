@@ -288,8 +288,8 @@ footer {
   max-width: 20rem;
 }
 
-.about .me {
-  display: none;
+.about-hero h1 {
+  text-align: center;
 }
 
 .about-main {
@@ -300,6 +300,12 @@ footer {
 .about-main img {
   display: block;
   margin: 0 auto 3rem;
+  outline: solid .3rem #98752e;
+  outline-offset: -2rem;
+}
+
+.about-main h2 {
+  padding-bottom: 1rem;
 }
 
 .about-main p {
@@ -957,6 +963,7 @@ textarea {
 
   .button {
     font-size: 1.8rem;
+    min-width: 16rem;
   }
 
   /* Nav Bar */
@@ -1029,28 +1036,30 @@ textarea {
 
 /**** About ****/
 
-.about-hero img {
-  max-width: 40rem;
+.about-hero {
+  background-image: url(../images/me-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-hero h1 {
+  padding: 13rem 0 7rem 8rem;
+  text-align: left;
+}
+
+.about .me-circle {
+  display: none;
 }
 
 .about-main {
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 80rem;
+  padding-top: 6rem;
 }
 
 .about-main h1 {
   max-width: 68rem;
-}
-
-.about-main p {
-  max-width: 68rem;
-}
-
-.about-main img {
-  display: block;
-  margin: 0 auto 30px;
-  outline: solid 3px #98752e;
-  outline-offset: -20px;
 }
 
 .about-buttons {
@@ -1061,7 +1070,6 @@ textarea {
   display: inline-block;
   margin-left: 2rem;
   margin-right: 2rem;
-  min-width: 16rem;
 }
 
   /**** Contact ****/
@@ -1385,27 +1393,17 @@ textarea {
 .about {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-columns: 3fr 6fr 3fr;
   }
 
   .about-hero {
-    background-image: url(../images/contact-hero.svg);
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: contain;
     grid-column: 1 / -1;
   }
 
-  .about-hero img {
-    padding: 3rem 0;
-  }
-
-  .about .me-circle {
-    display: none;
-  }
-
-  .about .me {
-    display: block;
+  .about-hero h1 {
+    font-size: 6rem;
+    padding: 35rem 0 15rem 0;
+    text-align: center;
   }
 
   .about-main {
