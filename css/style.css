@@ -65,7 +65,7 @@ li {
 }
 
 a {
-  color: #000000;
+  color: #915650;
   font-family: 'SaveurSans-Regular', arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -76,22 +76,22 @@ a {
 .nav a:hover {
   border-bottom: solid;
   border-width: .2rem;
-  color: #98752e;
+  color: #bd8776;
   padding-bottom: .5rem;
 }
 
 .selected {
   border-bottom: solid;
   border-width: .2rem;
-  color: #98752e;
+  color: #bd8776;
   padding-bottom: .5rem;
 }
 
 .button {
-    background-color: #98752e;
-    border: .1rem solid #ffffff;
-    box-shadow: 0 0 0 .5rem #98752e;
-    color: white;
+    background-image: linear-gradient(to right, #cd7f32 0%, #ffc081 51%, #cd7f32 100%);
+    border: .1rem solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0);
+    color: #fff9f3;
     display: inline-block;
     font-size: 1.6rem;
     font-family: 'SaveurSans-Regular', arial, sans-serif;
@@ -100,14 +100,17 @@ a {
     padding: 1rem 3rem;
     text-align: center;
     text-decoration: none;
+
 }
 
 .button:hover {
-  background-color: #FFFFFF;
-  border: .1rem solid #98752e;
-  box-shadow: 0 0 0 .5rem #ffffff;
-  color: #98752e;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  border: .1rem solid #cd7f32;
+  box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0);
+  color: #cd7f32;
 }
+
 
 img {
   max-width: 100%;
@@ -149,14 +152,14 @@ header {
 
 /* Footer */
 footer {
-  background-color: #2a0c27;
+  background-color: #915650;
   display: grid;
   grid-column: 1 / -1;
   grid-auto-rows: 1fr .5fr;
 }
 
 .copyright {
-  color: #e1d3b8;
+  color: #fff9f3;
   font-family: 'Montserrat', arial, sans-serif;
   font-size: 1.6rem;
   grid-row: 2 / span 1;
@@ -179,23 +182,23 @@ footer {
 
 /* hero section */
  .hero {
-   background: url(../images/hero.svg);
-   background-position: top;
+   background: url(../images/hero2.png);
+   background-position: center top;
    background-size: cover;
    grid-column: 1 / -1;
    padding: 9rem 2rem;
  }
 
  .hero h1 {
-   color: #f9f6f1;
+   color: #915650;
    font-size: 4rem;
    padding-bottom: 3rem;
  }
 
  .hero p {
-   color: #f9f6f1;
+   color: #915650;
    font-size: 2rem;
-   font-weight: 400;
+   font-weight: 600;
    padding-bottom: 1rem;
  }
 
@@ -203,12 +206,8 @@ footer {
   font-size: 5rem;
   letter-spacing: .5rem;
   text-shadow:
-         .4rem .4rem 0rem #98752e,
+         .4rem .4rem 0rem #fff9f3,
          .7rem .7rem 0rem rgba(0, 0, 0, 0.2);
-}
-
-.sentence span {
-  font-weight: 600;
 }
 
 /* Bevy section */
@@ -226,14 +225,14 @@ footer {
 }
 
 .featured:before, .featured:after {
-  background: #98752e;
+  background: linear-gradient(to right, #cd7f32, #ffc081, #cd7f32);
   content: '';
   display: block;
   height: .2rem;
 }
 
 .project-right {
-  background-color: rgb(152, 117, 46, .1);
+  background-color: rgb(189, 135, 118, .1);
   padding: 4rem 2rem;
   margin: 4rem 2rem;
 }
@@ -264,7 +263,9 @@ footer {
 
 /* Closing */
  .bottom {
-   background: url(../images/contact-hero.svg) center / contain;
+   background: url(../images/watercolor.png) center / contain;
+   background-repeat: no-repeat;
+   /*background: url(../images/contact-hero.svg) center / contain;*/
    grid-column: 1 / -1;
    padding: 8rem 2rem;
    text-align: center;
@@ -298,22 +299,11 @@ footer {
 }
 
 .about-main img {
-  display: block;
-  margin: 0 auto 3rem;
-  outline: solid .3rem #98752e;
-  outline-offset: -2rem;
-}
-
-.about-main h2 {
-  padding-bottom: 1rem;
+  display: none;
 }
 
 .about-main p {
   padding-bottom: 3rem;
-}
-
-.bio span {
-  font-weight: 600;
 }
 
 .about-buttons a {
@@ -323,7 +313,9 @@ footer {
 
 /**** Contact ****/
 .contact-hero {
-  background: url(../images/contact-hero.svg) center / contain;
+  background: url(../images/watercolor.png) center / contain;
+  background-repeat: no-repeat;
+  /*background: url(../images/contact-hero.svg) center / contain;*/
   grid-column: 1 / -1;
   padding: 8rem 2rem;
   text-align: center;
@@ -345,7 +337,7 @@ footer {
 }
 
 input, textarea{
-  border: .1rem solid #98752e;
+  border: .1rem solid #161a16;
   color: #000000;
   display: block;
   font-family: 'Montserrat', arial, sans-serif;
@@ -370,6 +362,11 @@ textarea {
 .bevy-hero {
   grid-column: 1 / -1;
   padding: 8rem 2rem;
+}
+
+.hero-image {
+  background: url(../images/watercolor.png) center / contain;
+  background-repeat: no-repeat;
 }
 
 .hero-image img {
@@ -426,18 +423,18 @@ textarea {
 
 /* Problem  & Solution*/
 .prob-sol {
-  background-color: #2a0c27;
+  background-color: #915650;
   grid-column: 1 / -1;
   padding: 8rem 2rem;
 }
 
 .prob-sol h2 {
-  color: #e1d3b8;
+  color: #fff9f3;
   padding-bottom: 1rem;
 }
 
 .prob-sol p {
-  color: #e1d3b8;
+  color: #fff9f3;
 }
 
 .problem {
@@ -459,7 +456,7 @@ textarea {
 }
 
 .heading-lines:before, .heading-lines:after {
-  background: #98752e;
+  background: linear-gradient(to right, #cd7f32, #ffc081, #cd7f32);
   content: '';
   display: block;
   height: .2rem;
@@ -1035,11 +1032,11 @@ textarea {
 }
 
 .to-top a {
-    color: #98752e;
+    color: #cd7f32;
 }
 
 .to-top a:hover {
-  color: #2a0c27;
+  color: #bd8776;
 }
 
 .learned a {
@@ -1316,25 +1313,29 @@ textarea {
 /**** About ****/
 
 .about-hero {
-  background-image: url(../images/me-2.png);
-  background-position: center;
+  background: url(../images/watercolor.png) center / contain;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about-hero h1 {
-  padding: 13rem 0 7rem 8rem;
-  text-align: left;
+  padding: 10rem 0 10rem 0;
+  text-align: center;
 }
 
 .about .me-circle {
   display: none;
 }
 
+.about .me-rec {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+  width: auto;
+}
+
 .about-main {
   margin: 0 auto;
   max-width: 80rem;
-  padding-top: 6rem;
 }
 
 .about-main h1 {
@@ -1803,7 +1804,7 @@ textarea {
 
   .about-hero h1 {
     font-size: 6rem;
-    padding: 35rem 0 15rem 0;
+    padding: 13rem 0 13rem 0;
     text-align: center;
   }
 
